@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1400px;
+    display: inherit;
+    margin: auto;
+    min-height: 100vh;
+    background: #191919;
+    font-family: sans-serif;
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

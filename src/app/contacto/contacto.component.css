@@ -1,0 +1,72 @@
+/*seccion contacto*/
+.seccion-contacto {
+    position: relative;
+    top: 0;
+    transition: 1s;
+    padding: 100px 150px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+   
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px 10 px;
+}
+
+:placeholder{
+    color: #fff;
+}
+
+#msg{
+    height: 280px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.form-submit-btn{
+    background: #fe8891fc;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.alert-danger{
+    color: #fe8891fc;
+    background: rgb(255, 255, 255);
+    border-color: rgb(225, 94, 199);
+    margin: 5px;
+}
+
+.container-error-message{
+    padding: 3px;
+}
+
+/*seccion mapa*/
+.map{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}

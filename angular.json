@@ -16,6 +16,15 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+          "styles": [
+            "src/styles.css",
+            "node_modules/bootstrap/dist/css/bootstrap.min.css"
+          ],
+          "scripts": [
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/@popperjs/core/dist/umd/popper.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js"
+          ],
           "options": {
             "outputPath": "dist/portafolio-web-src",
             "index": "src/index.html",
@@ -23,9 +32,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+              {"glob": "assets/**",
+                "input": "src",
+                "output": "/"
+              }
+              ],
             "styles": [
               "src/styles.css"
             ],

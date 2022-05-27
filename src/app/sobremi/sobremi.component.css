@@ -1,0 +1,248 @@
+/* seccion sobre mi */
+.seccion-inicio.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+.seccion-sobremi{
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 0;
+    position: relative;
+    top: 0;
+    transition: 1s;
+}
+
+.sobremi{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 40px;
+}
+
+.sobremi-img-container{
+    position: relative;
+}
+
+.sobremi-info{
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.sobremiimg {
+    background-image:url(sobremiimg.jpg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.2;
+}
+
+.descargar-cv-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.descargar-cv-btn:hover{
+    background: #000;
+}
+
+/* skills */
+ .seccion-skill{
+     position: relative;
+     margin: 100px 0;
+ }
+
+ .heading{
+     text-align: center;
+     font-size: 60px;
+     color: #fff;
+     text-transform: capitalize;
+     font-weight: 300;
+     margin-bottom: 100px;
+ }
+
+ .skills-container{
+     width: 95%;
+     margin:auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 100px;
+     color:#fff;
+ }
+
+ .skill-card{
+     position: relative;
+ }
+
+ .skill-img{
+     range:url(css.png);
+     range: url(html.png);
+     range: url(js.png);
+     display:block;
+     margin: auto;
+     height: 200px;
+ }
+
+ .skill-name{
+     font-size: 30px;
+     font-weight: 300px;
+     text-align: center;
+     text-transform: capitalize;
+     margin: 30px 0 20px;
+ }
+
+ .skill-info{
+     text-align: center;
+     opacity: 0.5;
+     font-size: 18px;
+     line-height: 30px;
+ }
+
+ .skill-level{
+     position:absolute;
+     top:80px;
+     right: 0;
+     width: 150px;
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+     border-radius: 50%;
+     border:10px solid;
+ }
+
+ .skill-card:nth-child(1) .skill-level{
+     background: #ffed4f28;
+     border-color: #fe8891fc;
+     color: #fe8891fc;
+ }
+
+ .skill-card:nth-child(2) .skill-level{
+    background: #ffed4f28; 
+    border-color: #fe8891fc;
+    color: #fe8891fc;
+ }
+
+ .skill-card:nth-child(3) .skill-level{
+     background: #ffed4f28;
+     border-color: #fe8891fc;
+     color: #fe8891fc;
+ }
+
+ /* linea de tiempo */
+ .lineadetiempo {
+     display: block;
+     width: 80%;
+     margin: 150px auto;
+ }
+
+ .lineadetiempo .heading{
+     margin-bottom: 150px;
+ }
+
+ .card{
+     width: 45%;
+     padding: 30px;
+     border-radius: 10px;
+     color: #fff;
+     display: block;
+     margin: -80px 0;
+     position: relative;
+     background: #fff;
+ }
+
+ .card:nth-child(even){
+     margin-left: auto;
+ }
+
+ .card:nth-child(even):before{
+     content: ' ';
+     position: absolute;
+     left: -15%;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 20px;
+     height:20px;
+     border: 5px, solid, rgb(255, 255, 255);
+     border-radius: 50%;
+ }
+ /**lineas blancas al costado de los momentos de la derecha**/
+ .card:nth-child(even):after{
+     content: ' ';
+     position: absolute;
+     left: -8.5%;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 7%;
+     height: 2px;
+     background: rgb(253, 253, 253);
+     z-index: -1;
+ }
+ /** contorno circulo rosa del momento izquierdo**/
+ .card:nth-child(odd):before{
+     content: ' ';
+     position: absolute;
+     right: -13%;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 20px;
+     height: 20px;
+     border: 5px solid #fe8891fc;
+     border-radius: 50%;
+ }
+ /** linea blanca a la izquierda del momento izquierdo**/
+ .card:nth-child(odd):after{
+    content: ' ';
+     position: absolute;
+     right: -8.5%;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 7%;
+     height: 2px;
+     background: rgb(255, 255, 255);
+     z-index: -1;
+ }
+
+ .card:nth-child(2), .card:nth-child(2):before{
+     background: #fe8891fc;
+ }
+
+.card:nth-child(3), .card:nth-child(3):before{
+    background: #fe8891fc;
+}
+
+.card:nth-child(4), .card:nth-child(4):before{
+    background: #fe8891fc;
+}
+
+/**linea punteada del medio**/
+.card:nth-child(even) .card-body::before{
+    content: '';
+    position: absolute;
+    left: -12%;
+    width: 0;
+    height: 100%;
+    border: 1px dashed #fff;
+    z-index: -1;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
