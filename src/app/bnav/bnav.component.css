@@ -27,6 +27,68 @@
     font-size: 20px;
 }
 
+.logoAP {
+        background-image:url(APLogo.png);
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 21px;
+        left: 120px;
+        
+}
+.logoTW {
+     background-image: url(logoTW.png);
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     top: 25px;
+     right: 120px;
+}
+
+.logoINSTA{
+    background-image: url(logoINSTA.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    right: 160px;
+}
+
+.logoLIN{
+    background-image: url(logoLIN.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    right: 200px;
+}
+
+.logoFB{
+    background-image: url(logoFB.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    right: 240px;
+}
+
+.logoGIT{
+    background-image: url(logoGIT.png);
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    top: 25px;
+    right: 280px;
+}
+
+.btn-outline-light{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 27px;
+    left: 210px;
+}
+
 .link a:hover, .link.active a{
     opacity: 1;
 }

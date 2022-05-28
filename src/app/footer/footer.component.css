@@ -1,0 +1,11 @@
+.row{
+    background-color: #191919;;
+}
+
+footer{
+    color: white;
+    font-size: 14px;
+    display: flex;
+    position: absolute;
+    right: 30%;
+}

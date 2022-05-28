@@ -13,6 +13,7 @@ import { SobremiComponent } from './sobremi/sobremi.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     InicioComponent,
     SobremiComponent,
     ContactoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
